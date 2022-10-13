@@ -5,16 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Grace Kwong Portfolio</title>
-
-    <style>
-        img {
-            height: 40vh;
-        }
-    </style>
 </head>
 
-<body>
+<body id="index">
 
     <header>
         <!-- Navigation -->
@@ -27,34 +23,50 @@
         </nav>
 
         <!-- Introduction -->
-        <p>Hello there!</p>
-        <h1>I'm Grace Kwong</h1>
-        <p>Hong Kong / Studying Computer Programming in Georgian College / Drawing</p>
-        <p>
-            <a href="mailto:gracek.job@gmail.com">Let’s connect!</a>
-        </p>
+        
+        <section class="card_head">
+            <p>Hello there!</p>
+            <h1><span>I'm</span> Grace Kwong</h1>
+            <p>🇭🇰 Hong Kong / 🖥 Studying Computer Programming in Canada / 🎨 Drawing</p>
+            <p>
+                <a href="mailto:gracek.job@gmail.com">✉️ Let’s connect!</a>
+            </p>
+        </section>
+
     </header>
     <!-- Key points -->
     <main>
+        <br>
         <section>
             <h2>Showcase</h2>
+
             <!-- flexbox -->
-            <div>
-                <figure>
-                    <img src="./images/lab_03.png"
-                        alt="Lab 03 thumbnail">
-                </figure>
-                <h3>Lab 03</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos placeat est libero odit?</p>
+            <div class="showcase">
+
+                <div class="card_portfo">
+                    <figure>
+                        <figcaption>
+                            <h3>Lab 04 - Table</h3>
+                            <p>Using the <strong>&#60; table &#62;</strong> element to do a character table</p>
+                        </figcaption>
+                        <img src="./images/lab_04_02.png"
+                            alt="Lab 04 thumbnail">
+                    </figure>
+                </div>
+
+                <div class="card_portfo">
+                    <figure>
+                        <figcaption>
+                            <h3>Lab 03 - Contact Form</h3>
+                            <p>Using the <strong>&#60; form &#62;</strong> element to make a contact and thanks page</p>
+                        </figcaption>
+                        <img src="./images/lab_03.png"
+                            alt="Lab 03 thumbnail">
+                    </figure>
+                </div>
+                
             </div>
-            <div>
-                <figure>
-                    <img src="./images/lab_04_02.png"
-                        alt="Lab 04 thumbnail">
-                </figure>
-                <h3>Lab 04</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos placeat est libero odit?</p>
-            </div>
+
         </section>
     </main>
 
