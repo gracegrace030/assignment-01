@@ -1,0 +1,9 @@
+@media screen and (max-width: 730px) {
+    html{
+        font-size: 12px;
+    }
+
+    #contact form{
+        width: 80%;
+    }
+}

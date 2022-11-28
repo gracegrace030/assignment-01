@@ -1,3 +1,5 @@
+/* Reset */
+@import url(./reset.css);
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Lato:wght@400;700&display=swap');
 
@@ -67,7 +69,6 @@ strong{
 /* Nav */
 nav {
     width: 100vw;
-    height: 64px;
     background-color:#D9A566;
     position: fixed;
     top: 0;
@@ -142,17 +143,33 @@ textarea{
     height: 10vw;
 }
 
-button{
-    width: 50%;
-    padding: 10px;
+.button{
+    display: inline-block;
     margin: 1vw 0;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
 
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button > a, .button > button{
+    display: inline-block;
+    width: 20em;
+    border-radius: 20px;
+    padding: 10px;
     font-size: 1rem;
     font-weight: bold;
     color: var(--bg-color);
-    background-color: var(--primary-color);
     border: 0 solid transparent;
-    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover a, .button:hover button{
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 /* End of Form */
@@ -160,6 +177,21 @@ button{
 /* --------------------------------------- */
 
 /* Index Page */
+
+.head_banner{
+    background-image: url(../images/head_banner.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.head_banner h1{
+    color: #fff;
+}
+
+.head_banner button{
+    width: initial;
+    padding: 0.5em 4em;
+}
 
 .card_head{
     /* width: 80vw; */
