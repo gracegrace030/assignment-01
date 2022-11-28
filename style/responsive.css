@@ -1,9 +1,19 @@
 @media screen and (max-width: 730px) {
     html{
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    .card_portfo{
+        width: 100vw;
+        text-align: center;
+    }
+
+    .card_portfo img{
+        width: 70vw;
     }
 
     #contact form{
         width: 80%;
     }
+
 }
